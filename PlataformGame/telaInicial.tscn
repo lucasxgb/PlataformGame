@@ -1,11 +1,13 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Fontes/Poppins/Poppins-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/telaInicial.gd" type="Script" id=2]
 [ext_resource path="res://Sprites/Inicial/nome.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Tiles/TilesNovos.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Cair de cima no personagem pra tirar dano/peças.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Personagem/Idle/idleII.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Tiles/Tile Soma.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Nuvens/NuvemProMenu.png" type="Texture" id=8]
 
 [sub_resource type="Animation" id=10]
 resource_name = "Idle"
@@ -42,7 +44,7 @@ tracks/0/keys = {
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
 [sub_resource type="StyleBoxFlat" id=8]
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
+bg_color = Color( 0.960784, 0.960784, 0.960784, 1 )
 
 [sub_resource type="StyleBoxFlat" id=4]
 bg_color = Color( 0.960784, 0.960784, 0.960784, 1 )
@@ -149,6 +151,76 @@ font_data = ExtResource( 1 )
 7/shape_one_way_margin = 0.0
 7/shapes = [  ]
 7/z_index = 0
+8/name = "TilesNovos.png 8"
+8/texture = ExtResource( 4 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 32, 32, 32 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "TilesNovos.png 9"
+9/texture = ExtResource( 4 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 32, 32, 32, 32 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "TilesNovos.png 10"
+10/texture = ExtResource( 4 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 32, 32 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "TilesNovos.png 11"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 32, 0, 32, 32 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "peças.png 12"
+12/texture = ExtResource( 5 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 64, 0, 32, 32 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
 
 [node name="telaInicial" type="Control"]
 anchor_right = 1.0
@@ -157,16 +229,25 @@ script = ExtResource( 2 )
 
 [node name="bg" type="Node2D" parent="."]
 
-[node name="Sprite" type="Sprite" parent="bg"]
+[node name="ceu" type="Sprite" parent="bg"]
+position = Vector2( 512, 288 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 8 )
+
+[node name="ColorRect" type="ColorRect" parent="bg"]
+margin_right = 1024.0
+margin_bottom = 608.0
+color = Color( 0, 0, 0, 0.576471 )
+
+[node name="nome do jogo" type="Sprite" parent="bg"]
 position = Vector2( 575.5, 267.344 )
 scale = Vector2( 0.590104, 0.590104 )
 texture = ExtResource( 3 )
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 0, -32 )
+position = Vector2( 896, 470 )
 
 [node name="Sprite" type="Sprite" parent="Player"]
-position = Vector2( 894, 502 )
 scale = Vector2( 1.80612, 1.80612 )
 texture = ExtResource( 6 )
 flip_h = true
@@ -241,4 +322,4 @@ align = 0
 tile_set = SubResource( 9 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 6, 2, 0, 7, 2, 0, 8, 2, 0, 9, 2, 0, 10, 2, 0, 11, 2, 0, 12, 2, 0, 13, 2, 0, 14, 2, 0, 15, 2, 0, 16, 2, 0, 17, 2, 0, 18, 2, 0, 19, 2, 0, 20, 2, 0, 21, 2, 0, 22, 2, 0, 23, 2, 0, 24, 2, 0, 25, 2, 0, 26, 2, 0, 27, 2, 0, 28, 2, 0, 29, 2, 0, 30, 2, 0, 31, 2, 0, 65536, 5, 0, 65567, 4, 0, 131072, 5, 0, 131103, 4, 0, 196608, 5, 0, 196639, 4, 0, 262144, 5, 0, 262175, 4, 0, 327680, 5, 0, 327711, 4, 0, 393216, 5, 0, 393247, 4, 0, 458752, 5, 0, 458783, 4, 0, 524288, 5, 0, 524319, 4, 0, 589824, 5, 0, 589855, 4, 0, 655360, 5, 0, 655391, 4, 0, 720896, 5, 0, 720927, 4, 0, 786432, 5, 0, 786463, 4, 0, 851968, 5, 0, 851999, 4, 0, 917504, 5, 0, 917535, 4, 0, 983040, 5, 0, 983071, 4, 0, 1048576, 5, 0, 1048577, 6, 0, 1048578, 6, 0, 1048579, 6, 0, 1048580, 6, 0, 1048581, 6, 0, 1048582, 6, 0, 1048583, 6, 0, 1048584, 6, 0, 1048585, 6, 0, 1048586, 6, 0, 1048587, 6, 0, 1048588, 6, 0, 1048589, 6, 0, 1048590, 6, 0, 1048591, 6, 0, 1048592, 6, 0, 1048593, 6, 0, 1048594, 6, 0, 1048595, 6, 0, 1048596, 6, 0, 1048597, 6, 0, 1048598, 6, 0, 1048599, 6, 0, 1048600, 6, 0, 1048601, 6, 0, 1048602, 6, 0, 1048603, 6, 0, 1048604, 6, 0, 1048605, 6, 0, 1048606, 6, 0, 1048607, 4, 0, 1114112, 5, 0, 1114113, 3, 0, 1114114, 3, 0, 1114115, 3, 0, 1114116, 3, 0, 1114117, 3, 0, 1114118, 3, 0, 1114119, 3, 0, 1114120, 3, 0, 1114121, 3, 0, 1114122, 3, 0, 1114123, 3, 0, 1114124, 3, 0, 1114125, 3, 0, 1114126, 3, 0, 1114127, 3, 0, 1114128, 3, 0, 1114129, 3, 0, 1114130, 3, 0, 1114131, 3, 0, 1114132, 3, 0, 1114133, 3, 0, 1114134, 3, 0, 1114135, 3, 0, 1114136, 3, 0, 1114137, 3, 0, 1114138, 3, 0, 1114139, 3, 0, 1114140, 3, 0, 1114141, 3, 0, 1114142, 3, 0, 1114143, 4, 0 )
+tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 6, 2, 0, 7, 2, 0, 8, 2, 0, 9, 2, 0, 10, 2, 0, 11, 2, 0, 12, 2, 0, 13, 2, 0, 14, 2, 0, 15, 2, 0, 16, 2, 0, 17, 2, 0, 18, 2, 0, 19, 2, 0, 20, 2, 0, 21, 2, 0, 22, 2, 0, 23, 2, 0, 24, 2, 0, 25, 2, 0, 26, 2, 0, 27, 2, 0, 28, 2, 0, 29, 2, 0, 30, 2, 0, 31, 2, 0, 65536, 5, 0, 65567, 4, 0, 131072, 5, 0, 131103, 4, 0, 196608, 5, 0, 196639, 4, 0, 262144, 5, 0, 262168, 2, 0, 262169, 3, 0, 262175, 4, 0, 327680, 5, 0, 327704, 5, 0, 327705, 4, 0, 327711, 4, 0, 393216, 5, 0, 393247, 4, 0, 458752, 5, 0, 458783, 4, 0, 524288, 5, 0, 524319, 4, 0, 589824, 5, 0, 589855, 4, 0, 655360, 5, 0, 655391, 4, 0, 720896, 5, 0, 720927, 4, 0, 786432, 5, 0, 786463, 4, 0, 851968, 5, 0, 851999, 4, 0, 917504, 5, 0, 917535, 4, 0, 983040, 5, 0, 983071, 4, 0, 1048576, 10, 0, 1048577, 10, 0, 1048578, 10, 0, 1048579, 10, 0, 1048580, 10, 0, 1048581, 10, 0, 1048582, 10, 0, 1048583, 10, 0, 1048584, 10, 0, 1048585, 10, 0, 1048586, 10, 0, 1048587, 10, 0, 1048588, 10, 0, 1048589, 10, 0, 1048590, 10, 0, 1048591, 10, 0, 1048592, 8, 0, 1048593, 8, 0, 1048594, 8, 0, 1048595, 8, 0, 1048596, 8, 0, 1048597, 8, 0, 1048598, 8, 0, 1048599, 8, 0, 1048600, 8, 0, 1048601, 8, 0, 1048602, 8, 0, 1048603, 8, 0, 1048604, 8, 0, 1048605, 8, 0, 1048606, 8, 0, 1048607, 8, 0, 1114112, 9, 0, 1114113, 9, 0, 1114114, 9, 0, 1114115, 9, 0, 1114116, 9, 0, 1114117, 9, 0, 1114118, 9, 0, 1114119, 9, 0, 1114120, 9, 0, 1114121, 9, 0, 1114122, 9, 0, 1114123, 9, 0, 1114124, 9, 0, 1114125, 9, 0, 1114126, 9, 0, 1114127, 9, 0, 1114128, 9, 0, 1114129, 9, 0, 1114130, 9, 0, 1114131, 9, 0, 1114132, 9, 0, 1114133, 9, 0, 1114134, 9, 0, 1114135, 9, 0, 1114136, 9, 0, 1114137, 9, 0, 1114138, 9, 0, 1114139, 9, 0, 1114140, 9, 0, 1114141, 9, 0, 1114142, 9, 0, 1114143, 9, 0, 1179648, 9, 0, 1179649, 9, 0, 1179650, 9, 0, 1179651, 9, 0, 1179652, 9, 0, 1179653, 9, 0, 1179654, 9, 0, 1179655, 9, 0, 1179656, 9, 0, 1179657, 9, 0, 1179658, 9, 0, 1179659, 9, 0, 1179660, 9, 0, 1179661, 9, 0, 1179662, 9, 0, 1179663, 9, 0, 1179664, 9, 0, 1179665, 9, 0, 1179666, 9, 0, 1179667, 9, 0, 1179668, 9, 0, 1179669, 9, 0, 1179670, 9, 0, 1179671, 9, 0, 1179672, 9, 0, 1179673, 9, 0, 1179674, 9, 0, 1179675, 9, 0, 1179676, 9, 0, 1179677, 9, 0, 1179678, 9, 0, 1179679, 9, 0 )

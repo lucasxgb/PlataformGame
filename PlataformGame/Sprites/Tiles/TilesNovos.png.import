@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tile Soma + outros.png-25543e51e61b4a8b4dffb00737e7642a.stex"
+path="res://.import/TilesNovos.png-5eeaf65c1df486f5f11b8c2559a4e918.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tiles/Tile Soma + outros.png"
-dest_files=[ "res://.import/Tile Soma + outros.png-25543e51e61b4a8b4dffb00737e7642a.stex" ]
+source_file="res://Sprites/Tiles/TilesNovos.png"
+dest_files=[ "res://.import/TilesNovos.png-5eeaf65c1df486f5f11b8c2559a4e918.stex" ]
 
 [params]
 
