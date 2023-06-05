@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tile Soma + outros.png-f57a3b162d73673572c7ac39f88408ae.stex"
+path="res://.import/pp.png-c26cfc90aa03f66cee2cfb9ad465b38f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Tile Soma/Tile Soma + outros.png"
-dest_files=[ "res://.import/Tile Soma + outros.png-f57a3b162d73673572c7ac39f88408ae.stex" ]
+source_file="res://Sprites/Personagem/pp.png"
+dest_files=[ "res://.import/pp.png-c26cfc90aa03f66cee2cfb9ad465b38f.stex" ]
 
 [params]
 
