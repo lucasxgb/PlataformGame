@@ -8,3 +8,11 @@ func _ready():
 
 
 
+func _on_Controles_pressed():
+	var telaControles = load("res://Cenas/telaControles.tscn").instance() #instanciação
+	get_tree().current_scene.add_child(telaControles) #coloca a imagem sobre a tela inicial
+	pass # Replace with function body.
+
+
+func _on_Sair_pressed():
+	get_tree().quit()

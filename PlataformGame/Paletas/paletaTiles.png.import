@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/paleta3.png-a312499b314a98c83594deb4f1e1f86f.stex"
+path="res://.import/paletaTiles.png-3c504e7709ee87794ab04e94c3fc9ab0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/paleta3.png"
-dest_files=[ "res://.import/paleta3.png-a312499b314a98c83594deb4f1e1f86f.stex" ]
+source_file="res://Paletas/paletaTiles.png"
+dest_files=[ "res://.import/paletaTiles.png-3c504e7709ee87794ab04e94c3fc9ab0.stex" ]
 
 [params]
 
