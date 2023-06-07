@@ -7,12 +7,16 @@ func _ready():
 	
 
 
-
 func _on_Controles_pressed():
 	var telaControles = load("res://Cenas/telaControles.tscn").instance() #instanciação
 	get_tree().current_scene.add_child(telaControles) #coloca a imagem sobre a tela inicial
-	pass # Replace with function body.
+	
 
 
 func _on_Sair_pressed():
 	get_tree().quit()
+
+
+func _on_Continuar_pressed():
+	var telaNivel = load("res://Cenas/selecionarNível.tscn").instance() #instanciação
+	get_tree().current_scene.add_child(telaNivel) #coloca a imagem sobre a tela inicial

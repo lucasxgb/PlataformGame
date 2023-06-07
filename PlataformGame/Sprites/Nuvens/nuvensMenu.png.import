@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Nuvens.png-c01772326b9e9fb9909b5515b74aa497.stex"
+path="res://.import/nuvensMenu.png-633871546b66df47472a44e651126038.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Nuvens/Nuvens.png"
-dest_files=[ "res://.import/Nuvens.png-c01772326b9e9fb9909b5515b74aa497.stex" ]
+source_file="res://Sprites/Nuvens/nuvensMenu.png"
+dest_files=[ "res://.import/nuvensMenu.png-633871546b66df47472a44e651126038.stex" ]
 
 [params]
 
