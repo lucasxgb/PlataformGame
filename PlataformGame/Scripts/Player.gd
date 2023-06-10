@@ -1,21 +1,21 @@
 extends KinematicBody2D
 
-var speed = 250
+var move_speed = 480
+var gravity = 1200
+var jump_force = -720 #pq na godot é inverso o eixo y (pra cima positivo e pra baixo negativo)
 var velocity = Vector2()
 
-func get_input():
-	# Detect up/down/left/right keystate and only move when pressed.
-	velocity = Vector2()
-	if Input.is_action_pressed('ui_right'):
-		velocity.x += 1
-	if Input.is_action_pressed('ui_left'):
-		velocity.x -= 1
-	if Input.is_action_pressed('ui_down'):
-		velocity.y += 1
-	if Input.is_action_pressed('ui_up'):
-		velocity.y -= 1
-	velocity = velocity.normalized() * speed
-
 func _physics_process(delta):
-	get_input()
-	move_and_collide(velocity * delta)
+	velocity.y += gravity * delta
+	
+	move_and_slide(velocity)
+
+
+
+func _get_input():
+	
+	var move_direction = int(Input.is_action_just_pressed("move_right")) -  int(Input.is_action_just_pressed("move_left"))
+	velocity.x = move_speed * move_direction
+	
+	if move_direction !=0:
+		$textura.scale.x = move_direction

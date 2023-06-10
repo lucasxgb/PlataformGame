@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Fontes/Poppins/Poppins-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Sprites/Niveis/NivelSoma.png" type="Texture" id=2]
@@ -13,38 +13,56 @@
 [ext_resource path="res://Sprites/Niveis/MultiplicaçãoBloqueado.png" type="Texture" id=11]
 [ext_resource path="res://Sprites/Niveis/subtraçãobloqueado.png" type="Texture" id=12]
 [ext_resource path="res://Sprites/Niveis/DivisãoBloqueado.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Niveis/somahover.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Niveis/somaClick.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Niveis/multiplicacaoHover.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Niveis/subtracaoHover.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Niveis/subtracaoClick.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Niveis/divisaoHover.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Niveis/multiplicacaoClick.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Niveis/divisaoClick.png" type="Texture" id=21]
 
-[sub_resource type="StyleBoxFlat" id=8]
-bg_color = Color( 0.945098, 0.921569, 0.878431, 1 )
-border_color = Color( 0.945098, 0.921569, 0.878431, 1 )
-
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.807843, 0.807843, 0.807843, 1 )
-
-[sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
-
-[sub_resource type="StyleBoxFlat" id=5]
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
-
-[sub_resource type="Theme" id=9]
-Button/styles/disabled = null
-Button/styles/focus = SubResource( 8 )
-Button/styles/hover = SubResource( 3 )
-Button/styles/normal = SubResource( 4 )
-Button/styles/pressed = SubResource( 5 )
+[sub_resource type="DynamicFont" id=30]
+size = 24
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=10]
-size = 12
+size = 14
 font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxTexture" id=22]
+texture = ExtResource( 14 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_top = 100.0
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id=23]
+texture = ExtResource( 15 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_top = 100.0
+draw_center = false
 
 [sub_resource type="StyleBoxTexture" id=13]
 texture = ExtResource( 10 )
+region_rect = Rect2( 0, 0, 100, 100 )
 margin_top = 100.0
 draw_center = false
 
 [sub_resource type="StyleBoxTexture" id=14]
 texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_top = 100.0
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id=24]
+texture = ExtResource( 17 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_top = 100.0
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id=25]
+texture = ExtResource( 18 )
+region_rect = Rect2( 0, 0, 100, 100 )
 margin_top = 100.0
 draw_center = false
 
@@ -56,6 +74,17 @@ draw_center = false
 
 [sub_resource type="StyleBoxTexture" id=16]
 texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_top = 100.0
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id=26]
+texture = ExtResource( 19 )
+margin_top = 100.0
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id=27]
+texture = ExtResource( 21 )
 margin_top = 100.0
 draw_center = false
 
@@ -71,13 +100,27 @@ region_rect = Rect2( 0, 0, 100, 100 )
 margin_top = 100.0
 draw_center = false
 
+[sub_resource type="StyleBoxTexture" id=28]
+texture = ExtResource( 16 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_top = 100.0
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id=29]
+texture = ExtResource( 20 )
+region_rect = Rect2( 0, 0, 100, 100 )
+margin_top = 100.0
+draw_center = false
+
 [sub_resource type="StyleBoxTexture" id=19]
 texture = ExtResource( 11 )
+region_rect = Rect2( 0, 0, 100, 100 )
 margin_top = 100.0
 draw_center = false
 
 [sub_resource type="StyleBoxTexture" id=20]
 texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 100, 100 )
 margin_top = 100.0
 draw_center = false
 
@@ -181,6 +224,25 @@ draw_center = false
 6/shapes = [  ]
 6/z_index = 0
 
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0.807843, 0.807843, 0.807843, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.945098, 0.921569, 0.878431, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id=9]
+Button/styles/disabled = null
+Button/styles/hover = SubResource( 32 )
+Button/styles/normal = SubResource( 31 )
+
 [sub_resource type="DynamicFont" id=21]
 font_data = ExtResource( 1 )
 
@@ -197,6 +259,17 @@ margin_bottom = 600.0
 mouse_default_cursor_shape = 2
 color = Color( 0, 0, 0, 0.576471 )
 
+[node name="selecionarNivel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -107.5
+margin_top = 77.0
+margin_right = 107.5
+margin_bottom = 112.0
+custom_fonts/font = SubResource( 30 )
+text = "Selecione o nível:"
+align = 1
+
 [node name="fases" type="Node2D" parent="."]
 position = Vector2( 512, 304 )
 scale = Vector2( 4, 4.22222 )
@@ -205,17 +278,18 @@ scale = Vector2( 4, 4.22222 )
 anchor_top = 0.5
 anchor_bottom = 0.5
 margin_left = -40.0
-margin_top = -41.6842
+margin_top = -34.105
 margin_right = 60.0
-margin_bottom = 58.3158
+margin_bottom = 85.895
 rect_min_size = Vector2( 50, 50 )
 rect_scale = Vector2( 0.2, 0.2 )
 mouse_default_cursor_shape = 2
-theme = SubResource( 9 )
 custom_colors/font_color = Color( 0.945098, 0.921569, 0.878431, 1 )
 custom_colors/font_color_hover = Color( 0.278431, 0.262745, 0.313726, 1 )
 custom_colors/font_color_pressed = Color( 0.6, 0.27451, 0.054902, 1 )
 custom_fonts/font = SubResource( 10 )
+custom_styles/hover = SubResource( 22 )
+custom_styles/pressed = SubResource( 23 )
 custom_styles/disabled = SubResource( 13 )
 custom_styles/normal = SubResource( 14 )
 shortcut_in_tooltip = false
@@ -227,18 +301,19 @@ icon_align = 2
 [node name="btnfase2" type="Button" parent="fases"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 24.0
-margin_top = -41.6842
-margin_right = 124.0
-margin_bottom = 58.3158
+margin_left = 20.0
+margin_top = -34.105
+margin_right = 120.0
+margin_bottom = 85.895
 rect_min_size = Vector2( 50, 50 )
 rect_scale = Vector2( 0.2, 0.2 )
 mouse_default_cursor_shape = 2
-theme = SubResource( 9 )
 custom_colors/font_color = Color( 0.945098, 0.921569, 0.878431, 1 )
-custom_colors/font_color_hover = Color( 0.909804, 0.662745, 0.247059, 1 )
+custom_colors/font_color_hover = Color( 0.278431, 0.262745, 0.313726, 1 )
 custom_colors/font_color_pressed = Color( 0.6, 0.27451, 0.054902, 1 )
 custom_fonts/font = SubResource( 10 )
+custom_styles/hover = SubResource( 24 )
+custom_styles/pressed = SubResource( 25 )
 custom_styles/disabled = SubResource( 15 )
 custom_styles/normal = SubResource( 16 )
 disabled = true
@@ -258,11 +333,12 @@ margin_bottom = 96.2105
 rect_min_size = Vector2( 50, 50 )
 rect_scale = Vector2( 0.2, 0.2 )
 mouse_default_cursor_shape = 2
-theme = SubResource( 9 )
 custom_colors/font_color = Color( 0.945098, 0.921569, 0.878431, 1 )
 custom_colors/font_color_hover = Color( 0.278431, 0.262745, 0.313726, 1 )
 custom_colors/font_color_pressed = Color( 0.6, 0.27451, 0.054902, 1 )
 custom_fonts/font = SubResource( 10 )
+custom_styles/hover = SubResource( 26 )
+custom_styles/pressed = SubResource( 27 )
 custom_styles/disabled = SubResource( 17 )
 custom_styles/normal = SubResource( 18 )
 disabled = true
@@ -274,18 +350,19 @@ icon_align = 1
 [node name="btnfase4" type="Button" parent="fases"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 24.0
+margin_left = 20.0
 margin_top = -3.789
 margin_right = 124.0
-margin_bottom = 96.211
+margin_bottom = 116.211
 rect_min_size = Vector2( 50, 50 )
 rect_scale = Vector2( 0.2, 0.2 )
 mouse_default_cursor_shape = 2
-theme = SubResource( 9 )
 custom_colors/font_color = Color( 0.945098, 0.921569, 0.878431, 1 )
-custom_colors/font_color_hover = Color( 0.909804, 0.662745, 0.247059, 1 )
+custom_colors/font_color_hover = Color( 0.278431, 0.262745, 0.313726, 1 )
 custom_colors/font_color_pressed = Color( 0.6, 0.27451, 0.054902, 1 )
 custom_fonts/font = SubResource( 10 )
+custom_styles/hover = SubResource( 28 )
+custom_styles/pressed = SubResource( 29 )
 custom_styles/disabled = SubResource( 19 )
 custom_styles/normal = SubResource( 20 )
 disabled = true
@@ -312,10 +389,11 @@ margin_bottom = -131.0
 mouse_default_cursor_shape = 2
 theme = SubResource( 9 )
 custom_colors/font_color_focus = Color( 0.909804, 0.662745, 0.247059, 1 )
-custom_colors/font_color = Color( 0.945098, 0.921569, 0.878431, 1 )
+custom_colors/font_color = Color( 0.909804, 0.662745, 0.247059, 1 )
 custom_colors/font_color_hover = Color( 0.74902, 0.545098, 0.207843, 1 )
 custom_colors/font_color_pressed = Color( 0.6, 0.27451, 0.054902, 1 )
 custom_fonts/font = SubResource( 21 )
+action_mode = 0
 text = " Voltar "
 
 [connection signal="pressed" from="btnVoltar" to="." method="_on_btnVoltar_pressed"]
