@@ -1,21 +1,22 @@
 extends KinematicBody2D
 
-var move_speed = 480
+var move_speed = 800
 var gravity = 1200
-var jump_force = -720 #pq na godot é inverso o eixo y (pra cima positivo e pra baixo negativo)
+var jump_force = -1100 #pq na godot é inverso o eixo y (pra cima positivo e pra baixo negativo)
 var velocity = Vector2()
 var is_grounded
 onready var raycasts = get_node("raycasts")
 
+
 func _physics_process(delta):
 	velocity.y += gravity * delta
+	
 	_get_input()
 	velocity = move_and_slide(velocity)
 
 	is_grounded = _check_is_ground()
 	_set_animation()
-
-
+	
 
 func _get_input():
 	velocity.x=0
