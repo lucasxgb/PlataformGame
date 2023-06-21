@@ -25,8 +25,7 @@ Jogo de Plataforma desenvolvido para disciplina de Jogos Digitais
 
 
 ## Metodologia:
-
-
+- Desenvolvimento:
 
 	![Motor utilizado](https://github.com/lucasxgb/PlataformGame/blob/main/imagens/Tela%20Inicial.PNG?raw=true)
 	- `Motor utilizado`: A plataforma utilizada para o desenvolvimento do jogo foi o Godot que é um motor de jogos focado no desenvolvimento de jogos 2D, e com suporte para 3D. A versão escolhida foi a 3.5.2, pois, por ser uma versão mais antiga, o suporte a resolução de problemas torna-se maior.
