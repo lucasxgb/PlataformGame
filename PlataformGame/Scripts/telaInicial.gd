@@ -20,3 +20,8 @@ func _on_Sair_pressed():
 func _on_Continuar_pressed():
 	var telaNivel = load("res://Cenas/selecionarNível.tscn").instance() #instanciação
 	get_tree().current_scene.add_child(telaNivel) #coloca a imagem sobre a tela inicial
+
+
+func _on_NovoJogo_pressed():
+	var primeiraTela = load("res://CenaNiveis/nivel1.tscn").instance() #instanciação
+	get_tree().current_scene.add_child(primeiraTela)

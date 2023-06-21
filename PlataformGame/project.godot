@@ -14,6 +14,10 @@ config/name="PlataformGame"
 run/main_scene="res://Cenas/telaInicial.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Niveis="*res://Scripts/niveis.gd"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
