@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Vida.gd" type="Script" id=1]
+
+[node name="HUD" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Vida" type="ColorRect" parent="CanvasLayer"]
+margin_left = 16.0
+margin_top = 8.0
+margin_right = 90.0
+margin_bottom = 17.0
+color = Color( 0.270588, 0.258824, 0.258824, 1 )
+script = ExtResource( 1 )
+
+[node name="barra" type="ColorRect" parent="CanvasLayer/Vida"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 73.0
+margin_bottom = 8.0
+color = Color( 0.956863, 0.0313726, 0.0313726, 1 )
