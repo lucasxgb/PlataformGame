@@ -148,7 +148,7 @@ format = 1
 tile_data = PoolIntArray( 1, 0, 0, 9, 0, 0, 25, 4, 0, 26, 4, 0, 31, 3, 0, 46, 4, 0, 50, 5, 0, 53, 4, 0, 60, 4, 0, 65, 2, 0, 69, 4, 0, 72, 2, 0, 65539, 4, 0, 65541, 4, 0, 65544, 3, 0, 65561, 4, 0, 65574, 4, 0, 65584, 5, 0, 65592, 4, 0, 65602, 2, 0, 65620, 1, 0, 65650, 2, 0, 131152, 1, 0, 131154, 0, 0, 131157, 1, 0, 131158, 1, 0, 131159, 1, 0, 131160, 1, 0, 131161, 0, 0, 131166, 0, 0, 131172, 0, 0, 131173, 0, 0, 131178, 0, 0, 131179, 1, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 11329, 54 )
+position = Vector2( 2, 126 )
 
 [node name="Pergunta01" parent="." instance=ExtResource( 10 )]
 position = Vector2( 478, 173 )
@@ -168,7 +168,7 @@ margin_top = -102.0
 margin_right = 120.0
 margin_bottom = -59.0
 custom_fonts/font = SubResource( 17 )
-text = "5 + 17"
+text = "5 + 18"
 
 [node name="RespostaCerta" parent="Pergunta01" instance=ExtResource( 14 )]
 position = Vector2( -154, 217 )
