@@ -35,11 +35,9 @@ Jogo de Plataforma desenvolvido para disciplina de Jogos Digitais
 	- `Personagem`: A princípio o jogo só terá um personagem (Figura 2), que representará um estudante, a construção da base do personagem foi realizada no Universal LPC Spritesheet, que é um site para a criação de personagem, porém algumas animações precisaram ser alteradas ou feitas do zero.
  
 	![Figura 3](https://github.com/lucasxgb/PlataformGame/blob/main/imagens/pe%C3%A7as.png)
-	- Figura 3:
 	- `Objetivos`: Este será um jogo de plataforma 2D, o seu objetivo é a introdução e revisão de conceitos matemáticos. A partir disso estruturou-se a divisão em que cada assunto seria abordado em uma fase diferente, mesclando o conhecimento que foi obtido na fase anterior com a nova fase. Sendo assim quatro fases iniciais foram imaginadas, adição, subtração, multiplicação e divisão. Cada fase terá elementos que mencionarão o tipo da fase, como vemos na Figura 3. Todo o cenário terá detalhes remetentes, como por exemplo, até as nuvens possuem o sinal representante da determinada fase.
 
 	![Figura 4](https://github.com/lucasxgb/PlataformGame/blob/main/imagens/faseUm.PNG)
-	- Figura 4:
 	- `Jogabilidade`: Dentro do jogo são apresentadas perguntas (Figura 4), o jogador tem possibilidades de responder as perguntas matemáticas que são relacionadas ao assunto da fase, para isso é necessário que o mesmo colete a resposta passando por cima do resultado correto, caso o jogador passe por um objeto que contenha a resposta errada, ele perde vida. O jogador pode se movimentar utilizando as teclas direcionais do teclado e utilizar o espaço para saltar entre os obstáculos.
 
 
