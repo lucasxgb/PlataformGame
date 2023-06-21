@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Fontes/Poppins/Poppins-Bold.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Scripts/telaControles.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/telaSobre.gd" type="Script" id=1]
+[ext_resource path="res://Fontes/Poppins/Poppins-Bold.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
-font_data = ExtResource( 1 )
+font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0.945098, 0.921569, 0.878431, 1 )
@@ -29,12 +29,12 @@ Button/styles/pressed = SubResource( 5 )
 
 [sub_resource type="DynamicFont" id=7]
 size = 24
-font_data = ExtResource( 1 )
+font_data = ExtResource( 2 )
 
-[node name="telaControles" type="Control"]
+[node name="telaSobre" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 1024.0
@@ -43,34 +43,19 @@ color = Color( 0, 0, 0, 0.823529 )
 
 [node name="Informacoes" type="Label" parent="."]
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-margin_left = -327.0
-margin_top = 208.0
-margin_right = 327.0
-margin_bottom = 395.0
+anchor_bottom = 0.5
+margin_left = -361.5
+margin_top = -93.5
+margin_right = 361.5
+margin_bottom = 93.5
 custom_fonts/font = SubResource( 1 )
-text = "Mover para a esquerda:
-Mover para a direita:
-Pular:"
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Informacoes2" type="Label" parent="."]
-anchor_left = 0.5
-anchor_right = 0.5
-margin_left = -334.0
-margin_top = 208.0
-margin_right = 320.0
-margin_bottom = 395.0
-custom_fonts/font = SubResource( 1 )
-text = "Seta Esquerda 
-Seta Direita 
-Tecla de Espaço/ Seta Cima "
-align = 2
-__meta__ = {
-"_edit_group_": true
-}
+text = "Esse jogo foi desenvolvido com um propósito
+de introduzir conceitos matemáticos de forma simples 
+e objetiva. Desenvolvido como parte da nota da disciplina
+Jogos Digitais"
+align = 1
 
 [node name="Informacoes3" type="Label" parent="."]
 anchor_left = 0.5
@@ -80,11 +65,8 @@ margin_top = 132.0
 margin_right = 327.0
 margin_bottom = 319.0
 custom_fonts/font = SubResource( 1 )
-text = "Controles do jogo:"
+text = "Informações sobre o game:"
 align = 1
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="btnVoltar" type="Button" parent="."]
 anchor_left = 0.5
