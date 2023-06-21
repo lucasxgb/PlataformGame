@@ -10,7 +10,7 @@ Jogo de Plataforma desenvolvido para disciplina de Jogos Digitais
 
 - Esse projeto foi desenvolvido por: 
     
-  - [Lucas Gabriel da Silva Lima Reis](https://github.com/lucasxgb), 
+  	- [Lucas Gabriel da Silva Lima Reis](https://github.com/lucasxgb), 
 	- [Silas Silva Costa](https://github.com/silas-silva)
 
 
@@ -18,9 +18,9 @@ Jogo de Plataforma desenvolvido para disciplina de Jogos Digitais
 
 - Atualmente, no cenário educacional, nota-se o quão despreparados estão os estudantes, tanto no ensino fundamental e médio, como posteriormente na educação superior. Uma das principais dificuldades apresentadas é em relação a matemática básica. Diversos motivos são apontados para tentar entender qual a verdadeira razão desses obstáculos, como por exemplo, a falta de estrutura familiar dos estudantes, falta de professores, dentre outros.O aprendizado falho que surge desde o ensino fundamental, se transformam em uma imensa bola de neve quando se chega na graduação, uma vez que, Em cursos onde são apresentadas disciplinas que exigem conhecimento matemático, nota-se a alta evasão e o baixo rendimento (Rafael, 2015).
 
-Os autores deste artigo enfrentaram obstáculos em disciplinas exigentes de conceitos da matemática do ensino médio,como, Calculo I e Geometria Analítica, isso durante o processo de admissão no ensino superior. A partir daí, compreende-se que além da distribuição do conhecimento, é necessário a criação de alternativas que possam auxiliar o estudante enquanto ele aprende. A tecnologia se encaixa perfeitamente nesse contexto, uma vez que é uma ferramenta facilitadora, ela pode proporcionar ao professor o enriquecimento de suas práticas pedagógicas, ao utilizar os recursos disponibilizados, como vídeos, imagens e jogos educacionais.(Tarouco, 2004)
+- Os autores deste artigo enfrentaram obstáculos em disciplinas exigentes de conceitos da matemática do ensino médio,como, Calculo I e Geometria Analítica, isso durante o processo de admissão no ensino superior. A partir daí, compreende-se que além da distribuição do conhecimento, é necessário a criação de alternativas que possam auxiliar o estudante enquanto ele aprende. A tecnologia se encaixa perfeitamente nesse contexto, uma vez que é uma ferramenta facilitadora, ela pode proporcionar ao professor o enriquecimento de suas práticas pedagógicas, ao utilizar os recursos disponibilizados, como vídeos, imagens e jogos educacionais.(Tarouco, 2004)
 
-Sendo este último, uma eficaz ferramenta institucional, visto que os jogos possuem elementos que estimulam a competição e geram desafios, Os jogos divertem enquanto motivam, facilitam o aprendizado e aumentam a retenção do que foi ensinado (Tarouco, 2004). Utilizando os jogos como auxiliador educacional, foi pensado no jogo, cruzada matemática, que tem por objetivo introduzir e revisar conceitos matemáticos, do mais básico ao avançado, nas sessão de desenvolvimento é apresentado como foi realizada a sua construção.
+- Sendo este último, uma eficaz ferramenta institucional, visto que os jogos possuem elementos que estimulam a competição e geram desafios, Os jogos divertem enquanto motivam, facilitam o aprendizado e aumentam a retenção do que foi ensinado (Tarouco, 2004). Utilizando os jogos como auxiliador educacional, foi pensado no jogo, cruzada matemática, que tem por objetivo introduzir e revisar conceitos matemáticos, do mais básico ao avançado, nas sessão de desenvolvimento é apresentado como foi realizada a sua construção.
 
 
 
